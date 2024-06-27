@@ -12,17 +12,17 @@ function Update() {
     lastName: "",
     position: "",
     company: "",
-    business: "",
+    businessArena: "",
     employees: "",
-    street: "",
-    additional: "",
-    zip: "",
+    streetNumber: "",
+    additionalInformation: "",
+    zipCode: "",
     place: "",
     country: "",
     code: "",
-    phone: "",
+    phoneNumber: "",
     email: "",
-    termsAccepted: false
+    acceptTerms: false
   });
 
   useEffect(() => {
@@ -135,10 +135,10 @@ function Update() {
               <div className="form-row form-row-3">
                 <input
                   type="text"
-                  name="business"
+                  name="businessArena"
                   className="business"
                   placeholder="Business Arena"
-                  value={formData.business}
+                  value={formData.businessArena}
                   onChange={handleChange}
                   required
                 />
@@ -161,10 +161,10 @@ function Update() {
             <div className="form-row">
               <input
                 type="text"
-                name="street"
+                name="streetNumber"
                 className="street"
                 placeholder="Street + Nr"
-                value={formData.street}
+                value={formData.streetNumber}
                 onChange={handleChange}
                 required
               />
@@ -172,10 +172,10 @@ function Update() {
             <div className="form-row">
               <input
                 type="text"
-                name="additional"
+                name="additionalInformation"
                 className="additional"
                 placeholder="Additional Information"
-                value={formData.additional}
+                value={formData.additionalInformation}
                 onChange={handleChange}
                 required
               />
@@ -184,10 +184,10 @@ function Update() {
               <div className="form-row form-row-1">
                 <input
                   type="text"
-                  name="zip"
+                  name="zipCode"
                   className="zip"
                   placeholder="Zip Code"
-                  value={formData.zip}
+                  value={formData.zipCode}
                   onChange={handleChange}
                   required
                 />
@@ -230,10 +230,10 @@ function Update() {
               <div className="form-row form-row-2">
                 <input
                   type="text"
-                  name="phone"
+                  name="phoneNumber"
                   className="phone"
                   placeholder="Phone Number"
-                  value={formData.phone}
+                  value={formData.phoneNumber}
                   onChange={handleChange}
                   required
                 />
@@ -261,8 +261,8 @@ function Update() {
                 </p>
                 <input
                   type="checkbox"
-                  name="termsAccepted"
-                  checked={formData.termsAccepted}
+                  name="acceptTerms"
+                  checked={formData.acceptTerms}
                   onChange={handleChange}
                   required
                 />

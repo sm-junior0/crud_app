@@ -9,17 +9,17 @@ function FormV10() {
     lastName: "",
     position: "",
     company: "",
-    business: "",
+    businessArena: "",
     employees: "",
-    street: "",
-    additional: "",
-    zip: "",
+    streetNumber: "",
+    additionalInformation: "",
+    zipCode: "",
     place: "",
     country: "",
     code: "",
-    phone: "",
+    phoneNumber: "",
     email: "",
-    termsAccepted: false
+    acceptTerms: false
   });
 
   const handleChange = (event) => {
@@ -34,9 +34,8 @@ function FormV10() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(formData)
+    console.log(formData);
     fetch("http://localhost:5000/new", {
-
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -139,7 +138,7 @@ function FormV10() {
                 <div className="form-row form-row-3">
                   <input
                     type="text"
-                    name="business"
+                    name="businessArena"
                     className="business"
                     placeholder="Business Arena"
                     value={formData.businessArena}
@@ -165,7 +164,7 @@ function FormV10() {
               <div className="form-row">
                 <input
                   type="text"
-                  name="street"
+                  name="streetNumber"
                   className="street"
                   placeholder="Street + Nr"
                   value={formData.streetNumber}
@@ -176,7 +175,7 @@ function FormV10() {
               <div className="form-row">
                 <input
                   type="text"
-                  name="additional"
+                  name="additionalInformation"
                   className="additional"
                   placeholder="Additional Information"
                   value={formData.additionalInformation}
@@ -188,7 +187,7 @@ function FormV10() {
                 <div className="form-row form-row-1">
                   <input
                     type="text"
-                    name="zip"
+                    name="zipCode"
                     className="zip"
                     placeholder="Zip Code"
                     value={formData.zipCode}
@@ -234,7 +233,7 @@ function FormV10() {
                 <div className="form-row form-row-2">
                   <input
                     type="text"
-                    name="phone"
+                    name="phoneNumber"
                     className="phone"
                     placeholder="Phone Number"
                     value={formData.phoneNumber}
@@ -265,6 +264,9 @@ function FormV10() {
                   </p>
                   <input
                     type="checkbox"
+                    name="acceptTerms"
+                    checked={formData.acceptTerms}
+                    onChange={handleChange}
                   />
                   <span className="checkmark"></span>
                 </label>
