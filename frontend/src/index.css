@@ -1,0 +1,93 @@
+/* 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+form{
+    width: 20%;
+    height: 300px;
+    background-color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    border: 1px solid rgb(125, 125, 204);
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+body{
+    background: #e4e9f7;
+  }
+
+*{
+    font-family: 'poppins' , sans-serif;
+    font-size: small;
+}
+
+button{
+    background-color: rgba(76,68,182,0.808);
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 3px;
+    border-radius: 10px;
+    color: #fff;
+
+}
+
+input{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+button:hover{
+    background-color: rgba(76,68,182,0.9); 
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+.formCotainer{
+    display: flex;
+}
+.saveBtn{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: rgb(200, 8, 8);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .delete-btn:hover{
+    background-color: rgb(145, 4, 4);
+  }
+
+  .edit-btn{
+    background-color: rgb(76,68,182);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  .edit-btn:hover{
+    background-color: rgb(51, 38, 138);
+  } */

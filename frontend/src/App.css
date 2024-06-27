@@ -1,0 +1,34 @@
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+
+th {
+  background-color: #f2f2f2;
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+
+td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+caption {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.nav{
+  cursor: pointer;
+}
