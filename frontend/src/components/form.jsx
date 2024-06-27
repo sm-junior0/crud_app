@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import './style.css';
+import '../style.css';
 
 function FormV10() {
   const [formData, setFormData] = useState({

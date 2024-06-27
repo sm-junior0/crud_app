@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import App from './components/App.jsx'
 import './index.css'
 import './App.css'
-import FormV10 from './form.jsx'
-import Update from './Update.jsx' 
+import FormV10 from './components/form.jsx'
+import Update from './components/Update.jsx' 
 import { createBrowserRouter,RouterProvider}from 'react-router-dom'
 const router=createBrowserRouter([
   {

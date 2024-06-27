@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaHome } from "react-icons/fa";
 import { useNavigate, Link } from "react-router-dom";
-import "./styles.css";
+import "../styles.css";
 
 function App() {
   const navigate = useNavigate();
